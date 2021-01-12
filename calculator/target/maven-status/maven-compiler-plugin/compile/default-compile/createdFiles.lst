@@ -1,0 +1,10 @@
+nl/quintor/aegon/calculator/repository/CalculationRespository.class
+nl/quintor/aegon/calculator/rest/transformer/CalculationTransformer.class
+nl/quintor/aegon/calculator/rest/controller/CalculationController.class
+nl/quintor/aegon/calculator/model/CalculationType.class
+nl/quintor/aegon/calculator/model/Calculation.class
+nl/quintor/aegon/calculator/rest/dto/CalculationPayload.class
+nl/quintor/aegon/calculator/service/CalculationService.class
+nl/quintor/aegon/calculator/rest/dto/CalculationDto.class
+nl/quintor/aegon/calculator/service/SimpleCalculator.class
+nl/quintor/aegon/calculator/CalculatorApplication.class

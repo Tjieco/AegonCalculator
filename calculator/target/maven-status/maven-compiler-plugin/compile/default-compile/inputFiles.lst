@@ -1,0 +1,10 @@
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/model/CalculationType.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/rest/dto/CalculationPayload.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/model/Calculation.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/CalculatorApplication.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/rest/controller/CalculationController.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/rest/transformer/CalculationTransformer.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/repository/CalculationRespository.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/service/CalculationService.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/rest/dto/CalculationDto.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/main/java/nl/quintor/aegon/calculator/service/SimpleCalculator.java

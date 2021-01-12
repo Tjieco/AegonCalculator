@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: nl.quintor.aegon.calculator.rest.controller.CalculationControllerTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.961 s <<< FAILURE! - in nl.quintor.aegon.calculator.rest.controller.CalculationControllerTests
+testAdditionCalculation  Time elapsed: 0.127 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at nl.quintor.aegon.calculator.rest.controller.CalculationControllerTests.testAdditionCalculation(CalculationControllerTests.java:47)
+Caused by: java.lang.NullPointerException
+	at nl.quintor.aegon.calculator.rest.controller.CalculationControllerTests.testAdditionCalculation(CalculationControllerTests.java:47)
+
