@@ -1,4 +1,4 @@
-/home/tvdonselaar/javamasterclass/aegon/calculator/src/test/java/nl/quintor/aegon/calculator/rest/controller/CalculationControllerTests.java
-/home/tvdonselaar/javamasterclass/aegon/calculator/src/test/java/nl/quintor/aegon/calculator/service/SimpleCalculatorTests.java
-/home/tvdonselaar/javamasterclass/aegon/calculator/src/test/java/nl/quintor/aegon/calculator/rest/transformer/CalculationTransformerTests.java
-/home/tvdonselaar/javamasterclass/aegon/calculator/src/test/java/nl/quintor/aegon/calculator/CalculatorApplicationTests.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/test/java/nl/quintor/aegon/calculator/rest/transformer/CalculationTransformerTests.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/test/java/nl/quintor/aegon/calculator/service/SimpleCalculatorTests.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/test/java/nl/quintor/aegon/calculator/rest/controller/CalculationControllerTests.java
+/home/tvdonselaar/javamasterclass/aegon/AegonCalculator/calculator/src/test/java/nl/quintor/aegon/calculator/CalculatorApplicationTests.java
