@@ -22,9 +22,5 @@ export class CalculateService {
     }
   }
 
-  getCalculationHistory(): Observable<Calculation[]> {
-    return this.http.get<Calculation[]>(environment.calculationUrl + "/");
-  }
-
   constructor(private http: HttpClient) { }
 }

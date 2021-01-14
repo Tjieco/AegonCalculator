@@ -1,15 +1,15 @@
 package nl.quintor.aegon.calculator.service;
 
+import lombok.extern.slf4j.Slf4j;
 import nl.quintor.aegon.calculator.model.Calculation;
 import nl.quintor.aegon.calculator.model.CalculationType;
 import nl.quintor.aegon.calculator.repository.CalculationRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.Collection;
-import java.util.List;
 
 @Service
+@Slf4j
 public class CalculationService {
 
 
@@ -45,7 +45,12 @@ public class CalculationService {
 
     public Calculation divide(int first, int second) {
         Calculation calculation = new Calculation(first, second, CalculationType.DIVIDE);
-        calculation.setResult(calculator.divide(first, second));
+        try {
+            double result = calculator.divide(first, second);
+            calculation.setResult(result);
+        } catch (ArithmeticException e) {
+            calculation.setResult(Double.NaN);
+        }
         repository.save(calculation);
         return calculation;
     }

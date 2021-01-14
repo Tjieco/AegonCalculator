@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Calculation } from 'src/app/model/calculation';
 import { CalculateService } from 'src/app/services/calculate.service';
+import { HistoryService } from 'src/app/services/history.service';
 
 @Component({
   selector: 'app-history',
@@ -8,12 +9,17 @@ import { CalculateService } from 'src/app/services/calculate.service';
   styleUrls: ['./history.component.css']
 })
 export class HistoryComponent implements OnInit {
-  calculations: Array<Calculation>
 
-  constructor(private calculateService: CalculateService) { }
-
-  ngOnInit(): void {
-    this.calculateService.getCalculationHistory().subscribe(data => {console.log(data); this.calculations = data});
+  constructor(private historyService: HistoryService) { 
   }
 
+  ngOnInit(): void {
+    this.historyService.getCalculationHistory().subscribe(data => {
+      this.historyService.setHistory(data);
+    });
+  }
+
+  getCalculations(): Calculation[] {
+    return this.historyService.calculations;
+  }
 }

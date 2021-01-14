@@ -16,7 +16,8 @@ public class SimpleCalculator {
         return first * (double) second;
     }
 
-    public double divide(int first, int second) {
+    public double divide(int first, int second) throws ArithmeticException {
+        if (second == 0.0) throw new ArithmeticException("Division by Zero is not allowed");
         return first / (double) second;
     }
 }

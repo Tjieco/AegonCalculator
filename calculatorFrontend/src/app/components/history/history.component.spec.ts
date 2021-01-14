@@ -1,23 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { CalculateService } from 'src/app/services/calculate.service';
+import { HistoryService } from 'src/app/services/history.service';
 
 import { HistoryComponent } from './history.component';
 
 describe('HistoryComponent', () => {
   let component: HistoryComponent;
   let fixture: ComponentFixture<HistoryComponent>;
-  let mockCalculateService: CalculateService;
+  let mockHistoryService: HistoryService;
 
   beforeEach(async(() => {
-    mockCalculateService = jasmine.createSpyObj('calculateService', {
-      calculate: of(),
-      getCalculationHistory: of()
+    mockHistoryService = jasmine.createSpyObj('historyService', {
+      getCalculationHistory: of(),
+      setHistory: of()
     });
     TestBed.configureTestingModule({
       declarations: [ HistoryComponent ],
       providers: [
-        { provide: CalculateService, useValue: mockCalculateService}
+        { provide: HistoryService, useValue: mockHistoryService}
       ]
     })
     .compileComponents();

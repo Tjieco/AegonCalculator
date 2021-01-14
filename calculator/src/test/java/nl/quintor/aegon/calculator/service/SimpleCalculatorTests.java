@@ -48,13 +48,13 @@ public class SimpleCalculatorTests {
     public void testDivideZeroByZero() {
         int first = 0;
         int second = 0;
-        assertTrue(Double.isNaN(simpleCalculator.divide(first, second)));
+        assertThrows(ArithmeticException.class, () -> simpleCalculator.divide(first, second));
     }
 
     @Test
     public void testDivideNumberByZero() {
         int first = 3;
         int second = 0;
-        assertTrue(Double.isInfinite(simpleCalculator.divide(first, second)));
+        assertThrows(ArithmeticException.class, () -> simpleCalculator.divide(first, second));
     }
 }

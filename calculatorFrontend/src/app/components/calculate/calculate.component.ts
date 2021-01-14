@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { CalculateService } from 'src/app/services/calculate.service';
+import { HistoryService } from 'src/app/services/history.service';
+import { HistoryComponent } from '../history/history.component';
 
 export enum CalculationOperator {
   Add,
@@ -21,6 +23,7 @@ export class CalculateComponent implements OnInit {
   result: String;
 
   constructor(
+    private historyService: HistoryService,
     private calculateService: CalculateService,
     private formbuilder: FormBuilder)
    {
@@ -39,12 +42,14 @@ export class CalculateComponent implements OnInit {
     let response = this.calculateService.calculate(
       this.calculateForm.get('first').value,
       this.calculateForm.get('second').value,
-      this.currentOperator);
+      this.currentOperator
+    );
       
-      response.subscribe(data => {
-        this.result = data.result.toString();
-    }, err => this.result = "error!"
-    )
+    response.subscribe(data => {
+      this.result = data.result.toString();
+      this.historyService.addCalculation(data);
+      }, err => this.result = "error!"
+    );
   }
 
   setOperator(operator: CalculationOperator): void {
